@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.todo-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(220, 217, 217);
+}
+.header{
+    width: 100vw;
+    height: 22vh;
+    background-image: url('/images/bg-mobile-light.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    cursor: pointer;
+}
+
+.logo h1{
+    color: white;
+}
+input{
+    width: 100%;
+    height: 5vh;
+    margin-top: 1rem;
+    padding-left: 10px;
+    border: none;
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -20px;
+}
+form{
+    width: 100%;
+}
+.main-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.list-box{
+  width: 100%;
+  height: 5vh;
+  background-color: hsl(0, 0%, 98%);
+  border-bottom: 1px solid hsl(236, 9%, 61%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: hsl(240, 2%, 32%);
+}
+.check-btn{
+ background: transparent;
+ border: 1px solid hsl(236, 9%, 61%);
+ border-radius: 100%;
+ width: 20px;
+ height: 20px;
+ cursor: pointer;
+}
+.check-btn img{
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+.show{
+    background: linear-gradient(hsl(192, 100%, 67%),  hsl(280, 87%, 65%));
+}
+.show img{
+    transform: scale(1) !important;
+}
+.delete-btn{
+ background: transparent;
+ border: none;
+ cursor: pointer;
+}
+.option{
+  width: 100%;
+  height: 5vh;
+  background-color: hsl(0, 0%, 98%);
+  border-bottom: 1px solid hsl(236, 9%, 61%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  color: hsl(240, 2%, 32%);
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.box{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+.list{
+    width: 100%;
+    height: 5vh;
+    background-color: hsl(0, 0%, 98%);
+    border-bottom: 1px solid hsl(236, 9%, 61%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    color: hsl(240, 2%, 32%);
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.active{
+    color:  hsl(220, 98%, 61%);
+}
+
+.dark{
+    background-color: hsl(235, 21%, 11%);
+}
+.dark .header{
+    background-image: url('./images/bg-mobile-dark.jpg');
+}
+.dark input{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+.dark .list-box{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+.dark .option{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+.dark .list{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+.dark .list li:hover{
+ color: hsl(236, 33%, 92%);
+}
+.complete{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
